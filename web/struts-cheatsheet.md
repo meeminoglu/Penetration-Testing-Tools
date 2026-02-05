@@ -1,6 +1,6 @@
 ## Apache Struts Remote Code Execution cheatsheet
 
-Apacje Struts is a open source framework utilizing JavaEE web applications and encouraging to employ MVC (Model View Controller) architecture.
+Apache Struts is an open source framework utilizing JavaEE web applications and encouraging to employ MVC (Model View Controller) architecture.
 When having the application developed in so-called **_devMode_** as set in the _struts.xml_ file:
 
 ``` <constant name="struts.devMode" value="true" />```
@@ -16,7 +16,7 @@ The below list of commands is supported by the *devMode* in Struts:
 - `debug=console`
 - `debug=browser`
 
-There are the below most recognizeable example applications often deployed on the Tomcat webserver:
+There are the below most recognizable example applications often deployed on the Tomcat webserver:
 
 - the Struts 1:
  - struts-blank
@@ -38,7 +38,7 @@ By choosing one of them, testing whether it exists on target web server and pass
 ```
 http://target/struts2-blank/example/HelloWorld.action?debug=command&expression=1%2b1
 ```
-Firstly, we can see that those parameters are to be passed to the **.action** requests. Secondly, the above URL utilizes *struts2-blank* example webapplication, that may not be found on test server. In such situation one should go and test the very same parameters for actually deployed application.
+Firstly, we can see that those parameters are to be passed to the **.action** requests. Secondly, the above URL utilizes *struts2-blank* example web application, that may not be found on test server. In such situation one should go and test the very same parameters for actually deployed application.
 
 There are those two most important parameters:
 - `debug=command`
