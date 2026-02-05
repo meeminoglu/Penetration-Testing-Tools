@@ -3,9 +3,9 @@
 ## XML Vulnerabilities
 
 
-XML processing modules may be not secure against maliciously constructed data. An attacker could abuse XML features to carry out denial of service attacks, access logical files, generate network connections to other machines, or circumvent firewalls.
+XML processing modules may not be secure against maliciously constructed data. An attacker could abuse XML features to carry out denial of service attacks, access logical files, generate network connections to other machines, or circumvent firewalls.
 
-The penetration tester running XML tests against application will have to determine which XML parser is in use, and then to what kinds of below listed attacks that parser will be vulnerable.
+The penetration tester running XML tests against an application will have to determine which XML parser is in use, and then to what kinds of below listed attacks that parser will be vulnerable.
 
 ---
 
@@ -22,7 +22,7 @@ Best practices
 - Favor a SAX or iterparse-like parser for potential large data
 - Validate and properly quote arguments to XSL transformations and XPath queries
 - Don't use XPath expression from untrusted sources
-- Don't apply XSL transformations that come untrusted sources
+- Don't apply XSL transformations that come from untrusted sources
 
 (based on [Brad Hill's Attacking XML Security](https://www.isecpartners.com/media/12976/iSEC-HILL-Attacking-XML-Security-bh07.pdf))
 
@@ -170,7 +170,7 @@ $ ls -sh zeros.*
 
 ### XPath Injection
 
-XPath injeciton attacks pretty much work like SQL injection attacks. Arguments to XPath queries must be quoted and validated properly, especially when they are taken from the user. The page [Avoid the dangers of XPath injection](http://www.ibm.com/developerworks/xml/library/x-xpathinjection/index.html) list some ramifications of XPath injections.
+XPath injection attacks pretty much work like SQL injection attacks. Arguments to XPath queries must be quoted and validated properly, especially when they are taken from the user. The page [Avoid the dangers of XPath injection](http://www.ibm.com/developerworks/xml/library/x-xpathinjection/index.html) list some ramifications of XPath injections.
 
 ---
 
